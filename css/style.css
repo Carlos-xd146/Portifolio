@@ -1,43 +1,30 @@
-body{
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
-
-h1 {
-    margin: 0;
-    padding: 0;
-}
-
-.sobre {
-    margin: 0;
-    padding: 0;
-    height: 20%;
+body {
+    height: 100%;
     width: 100%;
     background-color: blue;
-    justify-items: center;
-    align-content: center;
-    text-align: center;
-}
-
-.projetos {
-    background-color: rgb(214, 214, 214);
-    height: 70%;
-    width: 100%;
     margin: 0;
     padding: 0;
     justify-items: center;
-    align-content: center;
-    text-align: center;
+    
 }
 
-
-.contatos {
-    height: 10%;
-    width: 100%;
-    background-color: rgb(50, 50, 255);
-    justify-items: center;
-    text-align: center;
+.container {
+    background-color: white;
+    height: 52rem;
+    width: 113rem;
+    margin-top: 60px;
+    border-radius: 20px;
+    display: flex;
     
+}
+
+.container .esquerda {
+    height: 100%;
+    width: 50%;
+    background-color: rgb(209, 209, 209);
+}
+
+.container .direita{
+    height: 100%;
+    width: 50%;
 }
