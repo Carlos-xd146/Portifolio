@@ -1,73 +1,103 @@
 * {
-    font-family: Georgia, 'Times New Roman', Times, serif
-}
-
-body {
-    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-color: white;
+}
+/* ------------------------------------------------------------- */
+header {
+    position: fixed;
+    padding: 20px;
+    background-color: rgba(9, 9, 121, 1);
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+header nav {
+    display: block;
+    /* margin: auto; */
+}
+
+header h3 {
+    color: white;
+}
+
+header a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: white
+    
 }
 
 /* ------------------------------------------------------------ */
-.sobre {
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* ------------------------------------------------------------ */
+.home {
     display: block;
     margin: auto;
     padding: 15px;
     align-content: center;
     border-radius: 8px;
-    background-color: rgb(124, 170, 255);
+    background-color: rgb(0, 169, 202)
 }
 
-.sobre p {
-    font-size: 17px;
-    padding-bottom: 10px;
+.home p {
+    font-size: 18px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-.sobre a{
-    padding-left: 20px;
+.home a{
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 40px;
-}
-.sobre h2{
-    font-size: 30px;
+    font-size: 45px;
 }
 
-.sobre button{
+.home h2{
+    font-size: 30px;
+    padding: 20px 0px 20px 0px;
+}
+
+.home button{
     padding: 10px 20px 10px 20px;
     border-radius: 25px;
     border: none;
     font-size: 17px;
     cursor: pointer;
 }
-.sobre button:hover{
+.home button:hover{
     background-color: black;
     color: white
     
 }
 
 /* -------------------------------------------------------- */
-.header {
-    margin: 0;
-    padding: 0;
-    height: 50%;
+.container-cima {
+    height: 100vh;
     width: 100%;
     background: #020024;
-background: linear-gradient(270deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 33%, rgba(0, 212, 255, 1) 90%);
+    background: linear-gradient(180deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgb(0, 165, 190) 100%);
     display: flex;
 }
 
-.header .foto {
+.container-cima .foto {
     align-content: center;
     display: block;
     margin: auto;
 }
 
-.header img{
+.container-cima img{
     width: 350px;
     height: 350px;
 }
@@ -77,14 +107,25 @@ background: linear-gradient(270deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 33%,
 
 /* --------------------------------------------------------------- */
 .projetos {
-    background-color: rgb(214, 214, 214);
-    height: 50%;
+    height: 100vh;
     width: 100%;
-    margin: 0;
-    padding: 0;
     justify-items: center;
     align-content: center;
     text-align: center;
+    background: #020024;
+    background: linear-gradient(0deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgb(0, 165, 190) 100%);
+}
+
+.projetos h1 {
+    color: white;
+    padding: 30px;
+}
+
+.projeto1 {
+    width: 300px;
+    height: 500px;
+    border: 2px solid white;
+    background-color: white;
 }
 
 /* ----------------------------------------------------------------- */
