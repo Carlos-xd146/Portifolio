@@ -3,11 +3,13 @@
     margin: 0;
     padding: 0;
 }
+
 /* ------------------------------------------------------------- */
 header {
     position: fixed;
     padding: 20px;
-    background-color: rgba(9, 9, 121, 1);
+    background: #000000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 92, 1) 50%, rgba(63, 63, 186, 1) 100%);
     width: 100%;
     display: flex;
     z-index: 100;
@@ -25,11 +27,10 @@ header h3 {
     color: white;
 }
 
-header a{
-    padding-right: 20px;
+header a {
+    padding-right: 80px;
     text-decoration: none;
     color: white
-    
 }
 
 /* ------------------------------------------------------------ */
@@ -39,55 +40,79 @@ body::-webkit-scrollbar {
 }
 
 /* ------------------------------------------------------------ */
-.home {
+.inicio {
     display: block;
     margin: auto;
-    padding: 15px;
-    align-content: center;
-    border-radius: 8px;
-    background-color: rgb(0, 169, 202)
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(51, 131, 235);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 169, 202, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 169, 202, 0);
+    width: 1000px;
+    height: 300px;
+    transition: padding 0.5s;
 }
 
-.home p {
-    font-size: 18px;
+.inicio p {
+    font-size: 20px;
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
-.home a{
-    padding-right: 20px;
+.inicio a {
+    padding-right: 30px;
     text-decoration: none;
     font-size: 18px;
+    transition: font-size 0.5s;
+}
+
+.inicio a:hover {
+    font-size: 22px;
 }
 
 h1 {
     font-size: 45px;
 }
 
-.home h2{
+.inicio h2 {
     font-size: 30px;
     padding: 20px 0px 20px 0px;
 }
 
-.home button{
+.inicio button {
     padding: 10px 20px 10px 20px;
     border-radius: 25px;
     border: none;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 169, 202, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 169, 202, 0);
     font-size: 17px;
     cursor: pointer;
-}
-.home button:hover{
-    background-color: black;
-    color: white
     
+}
+
+.inicio button:hover {
+    background-color: black;
+    color: white;
+}
+
+.inicio:hover {
+    display: block;
+    margin: auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgb(51, 131, 235);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 169, 202, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 169, 202, 0);
+   
 }
 
 /* -------------------------------------------------------- */
 .container-cima {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background: #020024;
-    background: linear-gradient(180deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgb(0, 165, 190) 100%);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(63, 63, 186, 1) 50%, rgba(2, 0, 36, 1) 100%);
     display: flex;
 }
 
@@ -97,35 +122,157 @@ h1 {
     margin: auto;
 }
 
-.container-cima img{
-    width: 350px;
-    height: 350px;
+.container-cima img {
+    width: 450px;
+    height: 450px;
+    animation-name: foto;
+    animation-duration: 1.5s;
+    border-radius: 50%;
 }
+
+@keyframes foto {
+    from {opacity: 0; transform: translateX(100px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+
 /* ------------------------------------------------------------- */
 
-
-
-/* --------------------------------------------------------------- */
-.projetos {
-    height: 100vh;
+.container-meio{
+    height: 80vh;
     width: 100%;
     justify-items: center;
     align-content: center;
     text-align: center;
     background: #020024;
-    background: linear-gradient(0deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgb(0, 165, 190) 100%);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(63, 63, 186, 1) 50%, rgba(2, 0, 36, 1) 100%);
 }
 
-.projetos h1 {
+.sobre {
+    height: 460px;
+    width: 1000px;
+    background-color: rgb(51, 131, 235);
     color: white;
+    border: none;
+    font-size: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 169, 202, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 169, 202, 0);
+    padding: 10px;
+
+
+    transition: padding 0.5s;
+}
+
+.sobre:hover {
+    padding: 20px;
+} 
+
+.container-meio p {
     padding: 30px;
 }
 
-.projeto1 {
-    width: 300px;
-    height: 500px;
-    border: 2px solid white;
-    background-color: white;
+.container-meio h1 {
+    color: white;
+    margin: 30px;
+    padding: 30px;
+    background-color: rgb(51, 131, 235);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 169, 202, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 169, 202, 0);
 }
+
+/* --------------------------------------------------------------- */
+.container-baixo {
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(63, 63, 186, 1) 50%, rgba(2, 0, 36, 1) 100%);
+}
+
+.container-baixo h1 {
+    color: white;
+    padding: 30px;
+    background-color: rgb(51, 131, 235);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 169, 202, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 169, 202, 0);
+}
+
+.projetos {
+    display: flex;
+}
+
+.projetos h3 {
+    font-size: 25px;
+    padding: 15px;
+}
+
+.projetos button {
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    border: 2px solid rgb(0, 41, 94);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 169, 202, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 169, 202, 0);
+    font-size: 17px;
+    cursor: pointer;
+    background-color: rgb(131, 184, 253);
+    transition: background-color 0.5s;
+    transition: padding 0.5s;
+    transition: font-size 0.5s;
+}
+.projetos button:hover {
+    background-color: rgb(0, 52, 119);
+    padding: 10px 25px 10px 25px;
+    font-size: 19px;
+    color: white;
+}
+
+.projetos img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+.projeto1,
+.projeto2,
+.projeto3 {
+    position: relative;
+    margin: 15px;
+    margin-top: 50px;
+    padding: 10px;
+    width: 400px;
+    height: 500px;
+    border: 2px solid rgb(0, 41, 94);
+    border-radius: 8px;
+    background-color: rgb(51, 131, 235);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 169, 202, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 169, 202, 0);
+
+    transition: padding 0.5s;
+
+
+    animation-name: cards;
+    animation-duration: 2s;
+}
+
+.projeto1:hover,
+.projeto2:hover,
+.projeto3:hover {
+    padding: 18px;
+}
+
+@keyframes cards {
+    from {opacity: 0; transform: translate(100px);}
+    to {opacity: 1; transform: translate(0);}
+}
+
 
 /* ----------------------------------------------------------------- */
